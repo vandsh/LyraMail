@@ -5,9 +5,6 @@
         {
             "label": "build",
             "command": "dotnet",
-            "options": {
-                "cwd": "src"
-            },
             "type": "shell",
             "args": [
                 "build",

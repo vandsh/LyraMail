@@ -7,9 +7,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/src/Lyralabs.TempMailServer.Web/bin/Debug/net5.0/Lyralabs.TempMailServer.Web.dll",
+            "program": "${workspaceFolder}/Web/bin/Debug/net8.0/Lyralabs.TempMailServer.Web.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/src/Lyralabs.TempMailServer.Web",
+            "cwd": "${workspaceFolder}/Web",
             "stopAtEntry": false,
             "serverReadyAction": {
                 "action": "openExternally",
@@ -19,7 +19,7 @@
                 "ASPNETCORE_ENVIRONMENT": "Development"
             },
             "sourceFileMap": {
-                "/Views": "${workspaceFolder}/src/Lyralabs.TempMailServer.Web/Views"
+                "/Views": "${workspaceFolder}/Web/Views"
             }
         }
     ]
