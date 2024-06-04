@@ -15,7 +15,7 @@ namespace Lyralabs.TempMailServer.Data.Context
 
             var config = new ConfigurationBuilder()
                 .AddJsonFile(configFile.FullName)
-                .AddEnvironmentVariables()
+                .AddEnvironmentVariables();
                 .Build();
 
             var options = new DbContextOptionsBuilder<DatabaseContext>()
