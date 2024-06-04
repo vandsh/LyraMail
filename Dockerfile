@@ -12,6 +12,7 @@ RUN dotnet publish "Lyralabs.TempMailServer.Web.csproj" -c Release -o /app/publi
 
 FROM base AS final
 ENV TZ="Europe/Berlin"
+ENV ASPNETCORE_URLS=http://*:80
 WORKDIR /app
 COPY --from=build /app/publish .
 ENTRYPOINT ["dotnet", "Lyralabs.TempMailServer.Web.dll"]
